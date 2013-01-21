@@ -1,0 +1,59 @@
+CREATE DATABASE  IF NOT EXISTS `sheweb` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `sheweb`;
+-- MySQL dump 10.13  Distrib 5.5.28, for debian-linux-gnu (i686)
+--
+-- Host: 192.168.16.34    Database: sheweb
+-- ------------------------------------------------------
+-- Server version	5.5.24-0ubuntu0.12.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `categorias`
+--
+
+DROP TABLE IF EXISTS `categorias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `categorias` (
+  `id_categorias` int(11) NOT NULL AUTO_INCREMENT,
+  `id_tipos_categorias` int(11) NOT NULL,
+  `id_padre` int(11) DEFAULT '0',
+  `nombre` varchar(255) NOT NULL,
+  `nombre_key` varchar(255) DEFAULT NULL,
+  `estado` varchar(15) NOT NULL,
+  PRIMARY KEY (`id_categorias`),
+  KEY `tipos_categorias_categorias_fk` (`id_tipos_categorias`),
+  CONSTRAINT `tipos_categorias_categorias_fk` FOREIGN KEY (`id_tipos_categorias`) REFERENCES `tipos_categorias` (`id_tipos_categorias`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=230 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categorias`
+--
+
+LOCK TABLES `categorias` WRITE;
+/*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
+INSERT INTO `categorias` VALUES (1,1,0,'Derecho',NULL,'activo'),(2,1,0,'Filosofía',NULL,'activo'),(3,1,0,'Política',NULL,'activo'),(4,1,0,'Educación',NULL,'activo'),(5,1,0,'Política',NULL,'activo'),(6,1,0,'Ecología',NULL,'activo'),(7,1,0,'Género',NULL,'activo'),(8,1,0,'Medicina',NULL,'activo'),(9,1,0,'Literatura',NULL,'activo'),(10,1,0,'Arte',NULL,'activo'),(11,1,0,'Religiones y Teología',NULL,'activo'),(12,1,0,'Ciencias Básicas',NULL,'activo'),(13,1,0,'Ciencias Humanas y Sociales',NULL,'activo'),(14,1,0,'Revistas',NULL,'activo'),(15,1,0,'Ingeniería',NULL,'activo'),(16,1,0,'Derechos Humanos',NULL,'activo'),(17,2,1,'Derecho Público',NULL,'activo'),(18,2,1,'Derecho Administrativo',NULL,'activo'),(19,2,1,'Derecho Ambiental',NULL,'activo'),(20,2,1,'Derecho Canónico',NULL,'activo'),(21,2,1,'Derecho Civil',NULL,'activo'),(22,2,1,'Derecho Comercial',NULL,'activo'),(23,2,1,'Derecho Constitucional',NULL,'activo'),(24,2,1,'Derecho Económico',NULL,'activo'),(25,2,1,'Derecho Internacional',NULL,'activo'),(26,2,1,'Derecho Laboral',NULL,'activo'),(27,2,1,'Derecho Notarial',NULL,'activo'),(28,2,1,'Derecho Penal',NULL,'activo'),(29,2,1,'Derecho Privado',NULL,'activo'),(30,2,1,'Derecho Procesal',NULL,'activo'),(31,2,1,'Derecho Romano',NULL,'activo'),(32,2,1,'Derecho Tributario',NULL,'activo'),(33,2,1,'Filosofía del Derecho',NULL,'activo'),(34,2,1,'Sociología del Derecho',NULL,'activo'),(35,2,1,'Derechos Humanos',NULL,'activo'),(36,2,2,'Filosofía Crítica',NULL,'activo'),(37,2,2,'Epistemología',NULL,'activo'),(38,2,2,'Estética',NULL,'activo'),(39,2,2,'Filosofía Política',NULL,'activo'),(40,2,2,'Hermenéutica',NULL,'activo'),(41,2,2,'Lógica',NULL,'activo'),(42,2,2,'Metafísica',NULL,'activo'),(43,2,4,'Pedagogía',NULL,'activo'),(44,2,4,'Didáctica',NULL,'activo'),(45,2,4,'Teoría Pedagógica',NULL,'activo'),(46,2,5,'Ciencia Política',NULL,'activo'),(47,2,5,'Economía Política',NULL,'activo'),(48,2,5,'Violencia',NULL,'activo'),(49,2,5,'Relaciones Internacionales',NULL,'activo'),(50,2,14,'Antropología - Sociología',NULL,'activo'),(51,2,14,'Arte – Estética',NULL,'activo'),(52,2,14,'Arquitectura - Urbanismo - Diseño',NULL,'activo'),(53,2,3,'Bioética',NULL,'activo'),(54,2,9,'Cuento',NULL,'activo'),(55,2,9,'Ensayo',NULL,'activo'),(56,2,9,'Novela',NULL,'activo'),(57,2,9,'Periodismo',NULL,'activo'),(58,2,9,'Poesía',NULL,'activo'),(59,2,9,'Teatro',NULL,'activo'),(60,2,9,'Crítica Literaria',NULL,'activo'),(61,2,9,'Teoría Literaria',NULL,'activo'),(62,2,10,'Arquitectura',NULL,'activo'),(63,2,10,'Artes Plásticas',NULL,'activo'),(64,2,10,'Diseño',NULL,'activo'),(65,2,10,'Fotografía',NULL,'activo'),(66,2,10,'Catálogos',NULL,'activo'),(67,2,14,'Cine - Fotografía - Audiovisuales',NULL,'activo'),(68,2,12,'Física',NULL,'activo'),(69,2,12,'Matemáticas',NULL,'activo'),(70,2,12,'Biología',NULL,'activo'),(71,2,8,'Salud',NULL,'activo'),(72,2,8,'Odontología',NULL,'activo'),(73,2,5,'Derechos Humanos',NULL,'activo'),(74,2,6,'Naturaleza',NULL,'activo'),(75,2,6,'Ecosistemas',NULL,'activo'),(76,2,6,'Ecología Humana',NULL,'activo'),(77,2,6,'Ecología Urbana',NULL,'activo'),(78,2,10,'Estética',NULL,'activo'),(79,2,14,'Derecho',NULL,'activo'),(80,2,14,'Ecología',NULL,'activo'),(81,2,14,'Economía - Administración',NULL,'activo'),(82,2,14,'Educación',NULL,'activo'),(83,2,14,'Filosofía - Ética',NULL,'activo'),(84,2,14,'Filosofía de la ciencia',NULL,'activo'),(85,2,14,'Género',NULL,'activo'),(86,2,14,'Historia - Geografía',NULL,'activo'),(87,2,10,'Danza',NULL,'activo'),(88,2,9,'Literatura Infantil',NULL,'activo'),(89,2,10,'Música',NULL,'activo'),(90,2,10,'Cine',NULL,'activo'),(91,2,11,'Judaísmo',NULL,'activo'),(92,2,10,'Teatro',NULL,'activo'),(93,2,5,'Historia',NULL,'activo'),(94,2,3,'Ética Empresarial',NULL,'activo'),(95,2,11,'Mitologías',NULL,'activo'),(96,2,11,'Teología',NULL,'activo'),(97,2,11,'Teología Cristiana',NULL,'activo'),(98,2,11,'Mística',NULL,'activo'),(99,2,2,'Historia de la Filosofía',NULL,'activo'),(100,2,2,'Filosofía de la Religión',NULL,'activo'),(101,2,11,'Historia de las Religiones',NULL,'activo'),(102,2,10,'Historia del Arte',NULL,'activo'),(103,2,2,'Teodicea',NULL,'activo'),(104,2,4,'Psicología Cognitiva',NULL,'activo'),(105,2,4,'Biblioteca Escolar',NULL,'activo'),(106,2,12,'Química',NULL,'activo'),(107,2,4,'Psicología',NULL,'activo'),(108,2,4,'Psicología Evolutiva',NULL,'activo'),(109,2,4,'Salud',NULL,'activo'),(110,2,4,'Educación de Adultos',NULL,'activo'),(111,2,5,'Globalización',NULL,'activo'),(112,2,5,'Filosofía Política',NULL,'activo'),(113,2,6,'Ecología Política',NULL,'activo'),(114,2,5,'Sociología Política',NULL,'activo'),(115,2,7,'Sociología',NULL,'activo'),(116,2,5,'Política Exterior',NULL,'activo'),(117,2,13,'Comunicación',NULL,'activo'),(118,2,13,'Historia',NULL,'activo'),(119,2,13,'Género',NULL,'activo'),(120,2,13,'Administración',NULL,'activo'),(121,2,12,'Geometría',NULL,'activo'),(122,2,1,'Derecho de Familia',NULL,'activo'),(123,2,13,'Economía',NULL,'activo'),(124,2,13,'Antropología',NULL,'activo'),(125,2,13,'Sociología',NULL,'activo'),(126,2,2,'Semiótica',NULL,'activo'),(127,2,8,'Veterinaria',NULL,'activo'),(128,2,9,'Narrativa',NULL,'activo'),(129,2,2,'Humanismo',NULL,'activo'),(130,2,13,'Psicología',NULL,'activo'),(131,2,13,'Psicoanálisis',NULL,'activo'),(132,2,4,'Psicología Educativa',NULL,'activo'),(133,2,4,'Política Educativa',NULL,'activo'),(134,2,4,'Historia de la Educación',NULL,'activo'),(135,2,4,'Poesía',NULL,'activo'),(136,2,13,'Linguística',NULL,'activo'),(137,2,4,'Filosofía de la Educación',NULL,'activo'),(138,2,11,'Filosofia de la Religión',NULL,'activo'),(139,2,5,'Política de Paz',NULL,'activo'),(140,2,13,'Estética',NULL,'activo'),(141,2,13,'Geografía',NULL,'activo'),(142,2,1,'Derecho Financiero',NULL,'activo'),(143,2,1,'Derecho Mercantil',NULL,'activo'),(144,2,13,'Política',NULL,'activo'),(145,2,4,'Educación Artística',NULL,'activo'),(146,2,4,'Educación Musical',NULL,'activo'),(147,2,4,'Sociología de la Educación',NULL,'activo'),(148,2,4,'Didáctica del Lenguaje',NULL,'activo'),(149,2,4,'Educación Ambiental',NULL,'activo'),(150,2,4,'Metodología del Estudio',NULL,'activo'),(151,2,4,'Educación y Medios',NULL,'activo'),(152,2,2,'Filosofía del Derecho',NULL,'activo'),(153,2,12,'Geología',NULL,'activo'),(154,2,6,'Investigacion',NULL,'activo'),(155,2,13,'Metodología',NULL,'activo'),(156,2,8,'Neurología',NULL,'activo'),(157,2,5,'Política y Cultura',NULL,'activo'),(158,2,4,'Educación Universitaria',NULL,'activo'),(159,2,1,'Teoría Jurídica',NULL,'activo'),(160,2,2,'Ética',NULL,'activo'),(161,2,8,'Oncología',NULL,'activo'),(162,2,4,'Educación en Salud',NULL,'activo'),(163,2,4,'Educación en Informática',NULL,'activo'),(164,2,4,'Educación Cooperativa',NULL,'activo'),(165,2,7,'Género Testimonio',NULL,'activo'),(166,2,7,'Género Comunicación',NULL,'activo'),(167,2,7,'Género Literatura',NULL,'activo'),(168,2,7,'Género Economía',NULL,'activo'),(169,2,7,'Género Política',NULL,'activo'),(170,2,7,'Género Educación',NULL,'activo'),(171,2,7,'Género Psicología',NULL,'activo'),(172,2,2,'Fenomenología',NULL,'activo'),(173,2,7,'Género Historia',NULL,'activo'),(174,2,7,'Género Filosofía',NULL,'activo'),(175,2,2,'Antropología Filosófica',NULL,'activo'),(176,2,14,'Literatura – Linguística',NULL,'activo'),(177,2,14,'Música - Teatro - Danza',NULL,'activo'),(178,2,14,'Pensamiento y Cultura',NULL,'activo'),(179,2,14,'Política',NULL,'activo'),(180,2,14,'Psicología - Psicoanálisis - Psiquiatría',NULL,'activo'),(181,2,1,'Legislación Informática',NULL,'activo'),(182,2,1,'Derecho Disciplinario',NULL,'activo'),(183,2,12,'Informática',NULL,'activo'),(184,2,1,'Derecho Arbitral',NULL,'activo'),(185,2,15,'Ingeniería Civil',NULL,'activo'),(186,2,4,'Educación Infantil',NULL,'activo'),(187,2,8,'Oftalmología y Optometría',NULL,'activo'),(188,2,8,'Anatomía',NULL,'activo'),(189,2,4,'Evaluación',NULL,'activo'),(190,2,4,'Educación Rural',NULL,'activo'),(191,2,8,'Farmacología',NULL,'activo'),(192,2,2,'Filosofía Analítica',NULL,'activo'),(193,2,16,'Historia',NULL,'activo'),(194,2,16,'Sociología',NULL,'activo'),(195,2,16,'Política',NULL,'activo'),(196,2,14,'Derechos Humanos',NULL,'activo'),(197,2,4,'Educación en Valores',NULL,'activo'),(198,2,14,'Medicina',NULL,'activo'),(199,2,2,'Filosofía y Literatura',NULL,'activo'),(200,2,15,'Ingeniería Electrónica',NULL,'activo'),(201,2,8,'Cirugía',NULL,'activo'),(202,2,4,'Capacitación',NULL,'activo'),(203,2,4,'Educación en Ciencia',NULL,'activo'),(204,2,4,'Textos Escolares',NULL,'activo'),(205,2,1,'Derecho de Internet',NULL,'activo'),(206,2,8,'Neumología',NULL,'activo'),(207,2,8,'Epidemiología',NULL,'activo'),(208,2,8,'Obstetricia',NULL,'activo'),(209,2,8,'Pediatría',NULL,'activo'),(210,2,7,'Derecho',NULL,'activo'),(211,2,4,'Educación Física',NULL,'activo'),(212,2,14,'Ciencias Básicas',NULL,'activo'),(213,2,15,'Bioingeniería',NULL,'activo'),(214,2,15,'Ingeniería Ambiental',NULL,'activo'),(215,2,1,'Derecho De Las Telecomunicaciones',NULL,'activo'),(216,2,8,'Fisioterapia',NULL,'activo'),(217,2,1,'Derecho Registral',NULL,'activo'),(218,2,15,'Ingeniería Mecánica',NULL,'activo'),(219,2,14,'Ingeniería',NULL,'activo'),(220,2,15,'Ingeniería De Sistemas',NULL,'activo'),(221,2,15,'Ingeniería Industrial',NULL,'activo'),(222,2,15,'Ingeniería Hidráulica',NULL,'activo'),(223,2,1,'Derecho Alternativo',NULL,'activo'),(224,2,1,'Derecho Urbanístico',NULL,'activo'),(225,2,15,'Ingeniería Agrícola',NULL,'activo'),(226,2,8,'Cardiología',NULL,'activo'),(227,2,8,'Psiquiatría',NULL,'activo'),(228,2,2,'Filosofía Del Lenguaje',NULL,'activo'),(229,1,0,'Sin Clasificar',NULL,'activo');
+/*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-01-21  8:42:52

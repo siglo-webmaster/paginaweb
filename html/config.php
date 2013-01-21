@@ -2,9 +2,9 @@
 
 
         /*< PAGINA ROOT*/
-        define("_URLPAGE","http://localhost/~adso/SigloWeb/");
+        define("_URLPAGE","http://localhost/~oborja/gitSHEWEB/paginaweb/paginaweb/html/");
        
-        define('_URLHOST','http://localhost/~adso/SigloWeb/');
+        define('_URLHOST','http://localhost/~oborja/gitSHEWEB/paginaweb/paginaweb/html/');
         
         //recaptchakey
         define('_RECAPTCHAPUBLICKEY','6LdoR9USAAAAAF3Q1NJOWAg7yOL1FsyvAjTcEzNw');
@@ -19,7 +19,7 @@
         define("_ONIXFILE",'http://127.0.0.1/onixtest/20120314-completa-papel.xml');
         
         /*< DATABASE CONFIGURATION */
-	define('_DBHOST','localhost');
+	define('_DBHOST','127.0.0.1');
 	define('_DBUSER','root');
 	define('_DBPASSWD','pepelon2012');
         define('_DBCATALOG','sheweb');
