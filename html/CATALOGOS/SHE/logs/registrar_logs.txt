@@ -93131,3 +93131,5 @@ Inicio programa de registro
 [ 080312 ] procesando siglodelhombre_carga_impresos_20120615.txt
 Inicio programa de registro
 [ 080312 ] procesando siglodelhombre_carga_impresos_20120615.txt
+Inicio programa de registro
+[ 012113 ] procesando siglodelhombre_carga_impresos_20120615.txt

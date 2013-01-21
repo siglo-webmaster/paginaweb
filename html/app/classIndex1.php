@@ -185,11 +185,10 @@ class classIndex1 extends classSHBaseSystem {
         require_once('app/homepage/classHomePage.php');
         $home = new classHomePage();
         $home->getdestacadosHomePage();
-        $home->getRecomendados();
         $home->getNovedades();
-        $home->getUniversidades();
-        $home->getRevistas();
-        return $home->destacadosHomePage.$home->novedades.$home->recomendados.$home->universidades.$home->revistas;
+        $home->getContenedornovedadeshome();
+        
+        return $home->destacadosHomePage.$home->novedades.$home->novedadeshome;
             
     }
 

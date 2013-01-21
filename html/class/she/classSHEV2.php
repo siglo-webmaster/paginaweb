@@ -267,6 +267,12 @@ class classSHEV2 {
                     $conn_prepare =$this->conn->prepare($query);
                     $conn_prepare->bindParam(':id_titulos',$last_id,PDO::PARAM_INT);
                     $conn_prepare->execute();
+                    
+                    
+                    $query = "UPDATE titulos set last_update='".date('Y-m-d h:i:S')."' WHERE id_titulos =:id_titulos";
+                    $conn_prepare =$this->conn->prepare($query);
+                    $conn_prepare->bindParam(':id_titulos',$last_id,PDO::PARAM_INT);
+                    $conn_prepare->execute();
 
               }else{
                     

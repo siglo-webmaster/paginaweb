@@ -10,9 +10,10 @@ root {
     border-style: solid;
     border-radius: 0;
     overflow: scroll; /*leave this value alone*/
-    width: 800px;
-    height: 335px; /*Height should enough to fit largest content's height*/
+    width: 482px;
+    height: 390px; /*Height should enough to fit largest content's height*/
     margin:0 0 5px 0;
+    background: #eee;
 }
 
 .destacados1 .belt{
@@ -25,12 +26,12 @@ root {
     float: left; /*leave this value alone*/
     overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
     margin: 0; /*margin around each panel*/
-    width: 800px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+    width: 482px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
 }
 .destacados1 .panel img{
     float:left;
-    width:800px;
-    height:335px;
+    width:482px;
+    height:390px;
     margin:0;
 }
 
@@ -42,12 +43,12 @@ root {
     text-align: left;
     position: relative; /*leave this value alone*/
     border-color: #BBB;
-    border-width: 0;
+    border-width: 0 ;
     border-style: solid;
     border-radius: 0.2em;
     overflow:  hidden;/*leave this value alone*/
     width: 215px;
-    height: fit-content; /*Height should enough to fit largest content's height*/
+    height: 390px; /*Height should enough to fit largest content's height*/
     max-height: 672px;
     overflow: hidden;
     background: #c0d020;
@@ -113,6 +114,7 @@ root {
     overflow:  hidden;/*leave this value alone*/
     width: 800px;
     height: fit-content; /*Height should enough to fit largest content's height*/
+    display: none;
 }
 
 .recomendados .titulo{
@@ -353,3 +355,18 @@ root {
     margin: 5px;
 }
 
+.contenedornovedadeshome {
+    float:left;
+    background:#ffffff;
+    width: 100%;
+    height: 190px;
+    margin: 2px 0 2px 0;
+}
+
+.detallecontenedornovedades{
+    border-color: #ddd;
+    border-width: 1px;
+    border-style:solid;
+    width:100%;
+    height: 160px;
+}
