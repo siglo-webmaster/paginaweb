@@ -1,0 +1,356 @@
+
+root { 
+    display: block;
+}
+
+.mainSearch{
+   z-index: 998;
+   position:relative;
+   float:left;
+   width:760px;
+   margin: 10px 0 10px 40px;
+   
+}
+
+.mainSearch .tituloBusqueda{
+    color: #990000;
+    float:left;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: 3px 10px 3px 10px;
+    height: 17px;
+    margin:0;
+    border-radius: 0.3em 0 0 0.3em;
+}
+.mainSearch .searchString{
+    float:left; 
+    margin:0;
+    width: 495px;
+    height: 25px;
+    font-size: 17px;
+    border-radius:0;
+}
+
+.mainSearch .sendButton {
+    float:left; 
+    margin: 0 10px 0 0;
+    width:60px;
+}
+
+.mainSearch .verOpcionesAvanzadas{
+    float:left;
+    margin: 0;
+    height:16px;
+    padding: 3px;
+    width: 140px;
+    font-size: 10px;
+    border: #ccc 1px solid;
+    border-radius:  0 0.3em 0.3em 0;
+    background-color:  #60b000;
+    color:#fff;
+}
+
+.mainSearch .opcionesAvanzadas{
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 0.5em 0.5em;
+    float:left;
+    font-size: 11px;
+    margin: 0 0 0 100px;
+}
+
+.mainSearch .opcionesAvanzadas .menuTipoBusqueda{
+    float:left;
+    clear:both;
+    width:100%;
+}
+
+.mainSearch .opcionesAvanzadas .menuTipoBusqueda .opcionInactiva{
+    float:left;
+    border: 1px solid #ccc;
+    border-radius: 0 0 0.5em 0.5em;
+    margin:0;
+    padding:2px;
+    background-color: #fff;
+    color:#000;
+    font-weight:  normal;
+    
+}
+
+.mainSearch .opcionesAvanzadas .menuTipoBusqueda .opcionActiva{
+    float:left;
+    border: 1px solid #ccc;
+    border-radius: 0 0 0.5em 0.5em;
+    margin:0;
+    padding:2px;
+    background-color: #CCC;
+    color:#000;
+    font-weight: bold;
+    
+}
+
+
+.mainSearch .opcionesAvanzadas .menuFormatos{
+    float:left;
+    clear:both;
+    width:100%;
+}
+
+.mainSearch .opcionesAvanzadas .menuFormatos .titulo{
+    float:right;
+    margin:12px 10px 5px 20px;
+}
+.mainSearch .opcionesAvanzadas .menuFormatos .formato{
+    float:right;
+    margin:5px 10px 5px 0;
+}
+
+
+.mainSearch .opcionesAvanzadas .opcionesBusqueda .titulo{
+    float:left;
+    margin: 10px;
+    font-size: 12px;
+}
+.mainSearch .opcionesAvanzadas .opcionesBusqueda .selectBusqueda{
+    float:left;
+    margin: 10px;
+}
+.mainSearch .opcionesBusqueda .fechas{
+    float:left;
+    width:100px;
+    margin:10px;
+}
+
+.mainSearch .loadingBusqueda{
+    float:left;
+    margin: 11px 0 11px 250px;
+    display:none;
+}
+.mainSearch .autocomplete{
+    position:relative;
+    float:left; 
+    z-index:999;
+    clear: both;
+    background: #fff;
+    padding:0;
+    width:100%;
+    display:none;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 0;
+}
+.mainSearch .seccion{
+    
+    background: #fff;
+    float:left;
+    width:200px;
+    min-height: 180px;
+    padding:5px;
+    border-color: #ddd;
+    border-style: solid;
+    border-width:0px;
+    border-radius:0;
+}
+
+.mainSearch .seccion .verMasResultados{
+    font-size: 12px;
+    font-weight: bold;
+    color:#900;
+    text-align: right;
+    padding: 5px 3px 0 0;
+}
+
+.mainSearch .seccion .verMasResultados a{
+    color:#900;
+}
+
+.mainSearch .seccion .verMasResultados a:link{
+    color:#900;
+}
+
+.mainSearch .seccion .verMasResultados a:visited{
+    color:#900;
+}
+
+.mainSearch .seccion .verMasResultados a:hover{
+    color:#900;
+}
+.mainSearch .seccion .verMasResultados a:active{
+    color:#900;
+}
+.mainSearch .seccion .titulo{
+    font-size: 12px;
+    font-weight: bold;
+    background: #ccc;
+    padding: 2px;
+    text-align: center;
+}
+.mainSearch .seccion .contenido ul{
+    background: #fff;
+    list-style-type:  none;
+    padding: 2px;
+    margin: 0;
+}
+
+
+.mainSearch .seccion .contenido ul li{
+    float:left;
+    background: #DeD;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 1px 0;
+    padding:5px;
+    width:187px;
+    color: #000;
+}
+
+.mainSearch .seccion .contenido ul li img{
+    width:35px;
+    margin: 0 5px 0 0 ;
+    float:left;
+}
+
+
+.overlay{
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     z-index:9998;
+     opacity:.75;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+}
+
+.popUp{
+   display:none;
+   z-index:9999; 
+   position:fixed; 
+   left:30%;
+   top: 15%;
+   left: 25%;
+   width: 50%;
+  /* height: 75%;*/
+   border: 1px solid #33CCFF; 
+   text-align:center; 
+   background:#FFFFFF;
+   border:solid 1px #aaa; 
+   border-radius: 0.3em;
+   overflow: auto;
+   padding: 15px;
+}
+
+.popUp .libro_detalle_search{
+   padding: 10px; 
+}
+
+.popUp .libro_detalle_search .contenedorimagen{
+    width: 160px;
+    height: 220px;
+    float:left;
+    background: #ddd;
+    margin: 0 20px 10px 0;
+    
+}
+
+.popUp .libro_detalle_search .contenedorimagen img{
+    margin-top: 10%;
+    
+}
+
+.popUp .libro_detalle_search .titulo{
+   font-size: 14px;
+   font-weight: bold;
+   color: #990000;
+   text-align:  left;
+   margin: 10px;
+}
+
+.popUp .libro_detalle_search .isbn{
+   font-size: 12px;
+   margin: 10px;
+   text-align:  left;
+}
+
+
+.popUp .libro_detalle_search .autores{
+   font-size: 12px;
+   margin: 10px;
+   text-align:  left;
+}
+
+
+.popUp .libro_detalle_search .editoriales{
+   font-size: 11px;
+   color: darkblue;
+   margin: 10px;
+   text-align:  left;
+}
+
+
+.popUp .libro_detalle_search .anyo{
+   font-size: 11px;
+   margin: 10px;
+   text-align:  left;
+}
+
+
+.popUp .libro_detalle_search .formatos_precios{
+   font-size: 12px;
+   margin: 10px;
+}
+
+
+.popUp .libro_detalle_search ul li{
+   font-size: 12px;
+   margin: 10px;
+   list-style:  none;
+}
+
+.popUp .libro_detalle_search p{
+    float:left;
+    font-size: 12px;
+    margin: 10px;
+    list-style:  none;  
+    text-align: justify;
+}
+
+.popUp .libro_detalle_search .enlaceboton {    
+    font-family: verdana, arial, sans-serif;
+    border-width: 3px;
+    font-size: 8pt;
+    font-family: arial;
+    display:inline;
+    text-decoration: none;
+    width:100px;
+    background-color: #c4c4c4;
+    padding: 5px;
+    margin:10px;
+}
+
+.popUp .libro_detalle_search .total{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 20px 0 10px;
+    float: right;
+    
+}
+
+.popUp .closeButton {
+    float:right;
+    font-weight: bold;
+    text-shadow:  2px;
+    font-size: 11px;
+    border-radius: 1em;
+    border: 0px solid #ccc;
+    padding: 3px;
+    width:25px;
+    height:25px;
+    text-align: right;
+    margin: -10px -10px 0 0;
+    background:  url(../images/close.png)  no-repeat;
+}

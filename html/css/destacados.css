@@ -1,0 +1,355 @@
+root { 
+    display: block;
+}
+
+.destacados1{
+    float:left;
+    position: relative; /*leave this value alone*/
+    border-color: #BBB;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0;
+    overflow: scroll; /*leave this value alone*/
+    width: 800px;
+    height: 335px; /*Height should enough to fit largest content's height*/
+    margin:0 0 5px 0;
+}
+
+.destacados1 .belt{
+    position: absolute; /*leave this value alone*/
+    left: 0;
+    top: 0;
+}
+
+.destacados1 .panel{
+    float: left; /*leave this value alone*/
+    overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+    margin: 0; /*margin around each panel*/
+    width: 800px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+.destacados1 .panel img{
+    float:left;
+    width:800px;
+    height:335px;
+    margin:0;
+}
+
+.novedades{
+    float:right;
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: left;
+    position: relative; /*leave this value alone*/
+    border-color: #BBB;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0.2em;
+    overflow:  hidden;/*leave this value alone*/
+    width: 215px;
+    height: fit-content; /*Height should enough to fit largest content's height*/
+    max-height: 672px;
+    overflow: hidden;
+    background: #c0d020;
+    
+}
+
+.novedades .titulo{
+    width: 100%;
+    background: #60B000;
+    margin:0;
+    padding: 5px;
+    border-color: #BBB;
+    border-width: 0;
+    border-style: solid;
+}
+
+.novedades .titulo h2{
+    font-size: 16px;
+   /* color:  #981900;*/
+   color:#333;
+    margin: 5px 0 0 10px;
+}
+
+.novedades .panel{
+    float: left;
+    overflow: hidden;
+    margin:0;
+    padding:10px 10px 0 0   ;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    border-color: #BBB;
+    border-width: 0;
+    border-style: solid;
+    background: #fff;
+}
+
+.novedades .panel .titulo{
+    background: #fff;
+    border-width:0px;
+    color: #000;
+    width: 95%;   
+}
+.novedades .panel img{
+    float:left;
+    width:70px;
+    height:100px;
+    margin: 5px;
+}
+
+
+.recomendados{
+    float:left;
+    margin: 0;
+    background: #eee;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    text-align: left;
+    position: relative; /*leave this value alone*/
+    border-color: #aaa;
+    border-width: 0 ;
+    border-style: solid;
+    overflow:  hidden;/*leave this value alone*/
+    width: 800px;
+    height: fit-content; /*Height should enough to fit largest content's height*/
+}
+
+.recomendados .titulo{
+    width: 100%;
+    height: 25px;
+    background: #eee;
+    margin:0;
+    padding: 5px 0 0 5px;
+}
+
+.recomendados .titulo h2{
+    font-size: 16px;
+    color:  #981900;
+    margin: 5px 0 0 10px;
+}
+
+.recomendados .panel{
+    padding:5px;
+    background:#eee;
+    float: left; 
+    overflow: hidden; 
+    margin: 5px;
+    width: 180px;
+    height: 300px;
+    border-radius: 0.5em;
+    border-color: #aaa;
+    border-width: 0;
+    border-style: solid;
+    font-size: 11px;
+}
+
+.recomendados .panel .titulo{
+    background: #eee;
+    font-size:12px;
+    color: #981900;
+}
+.recomendados .panel img{
+    width:140px;
+    height:200px;
+    margin: 2px 0 10px 20px
+}
+
+
+.universidades{
+    float:left;
+    margin: 5px 0 0 0;
+    background: #fff;
+    position: relative; /*leave this value alone*/
+    border-color: #aaa;
+    border-width: 0 ;
+    border-style: solid;
+    overflow:  hidden;/*leave this value alone*/
+    width: 49%;
+    height: fit-content; /*Height should enough to fit largest content's height*/
+}
+
+.universidades .titulo{
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    margin:0;
+    padding: 2px 0 5px 10px;
+    border-color: #bbb;
+    border-width: 0 0 1px 0 ;
+    border-style: solid;
+}
+
+.universidades .titulo h2{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #60b000;
+}
+
+
+
+.universidades  .item{
+    float:left;
+    font-size: 13px;
+    color:  #981900;
+    margin: 5px;
+    width:107px;
+    height: 107px;
+    text-align: center;
+    vertical-align:  middle;
+    border-radius: 0.3em;
+    border-color: #fff;
+    border-style:solid;
+    border-width: 2px;
+}
+
+.universidades  .item img{
+    max-width: 95px;
+    max-height: 95px;
+    border-color: #fff;
+}
+
+
+.revistas{
+    float:left;
+    margin: 0;
+    background: #fff;
+    position: relative; /*leave this value alone*/
+    border-color: #aaa;
+    border-width: 0 ;
+    border-style: solid;
+    overflow:  hidden;/*leave this value alone*/
+    width: 49%;
+    height: fit-content; /*Height should enough to fit largest content's height*/
+}
+
+.revistas .titulo{
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    margin:0;
+    padding: 2px 0 5px 10px;
+}
+.revistas .pie{
+    float:left;
+    width: 100%;
+    height: 0;
+    background: #c0d020;
+    margin:0;
+}
+
+.revistas .titulo h2{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #981900;
+}
+
+.revistas  .item{
+    float:left;
+    padding: 5px 0 0 0;
+    font-size: 13px;
+    color:  #981900;
+    margin: 5px 5px 0 5px;
+    width:47%;
+    height: 150px;
+    vertical-align:  middle;
+    
+    border-color: #bbb;
+    border-style:solid;
+    border-width: 1px 0 0 0 ;
+}
+
+.revistas  .item img{
+    float:left;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 0 0 10px
+}
+
+.revistas .item h3{
+    float:left;
+    font-size: 11px;
+    font-color: #981900;
+    margin:8px 2px 2px 2px;
+}
+
+.revistas .item p{
+    float:left;
+    text-align: left;
+    color:#666;
+    margin:8px 3px 3px 3px;
+    font-weight:  bold;
+    font-size: 11px;
+    
+}
+
+
+
+.destacadosEditoriales{
+    float:left;
+    margin: 0 0  20px 0;
+    padding: 0 0 5px 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: left;
+    position: relative; /*leave this value alone*/
+    border-color: #BBB;
+    border-width: 0 0 0 0 ;
+    border-style: solid;
+    border-radius: 0.2em;
+    overflow:  hidden;/*leave this value alone*/
+    width: fit-content;
+    height: fit-content; /*Height should enough to fit largest content's height*/
+    max-height: 672px;
+    overflow: hidden;
+    background: #fff;
+    
+}
+    
+.destacadosEditoriales .titulo{
+    width: 98%;
+    background: #fff;
+    margin:0;
+    padding: 5px;
+    border-color: #BBB;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.destacadosEditoriales .titulo h2{
+    font-size: 16px;
+    color:  #981900;
+    margin: 5px 0 0 10px;
+}
+
+.destacadosEditoriales .panel{
+    float: left;
+    overflow: hidden;
+    margin:2px;
+    padding:0;
+    width: 140px;
+    height: 180px;
+    overflow: hidden;
+    border-color: #BBB;
+    border-width: 0;
+    border-style: solid;
+    background: #fff;
+    text-align: center;
+    font-size: 11px;
+}
+
+.destacadosEditoriales .panel .titulo{
+    background: #fff;
+    border-width:0px;
+    color: #000;
+    font-size: 11px;
+}
+.destacadosEditoriales .panel img{
+    
+    width:80px;
+    height:120px;
+    margin: 5px;
+}
+

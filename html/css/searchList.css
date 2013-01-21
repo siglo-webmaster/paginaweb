@@ -1,0 +1,103 @@
+root { 
+    display: block;
+}
+
+.resumenbusqueda{
+    float:left;
+    text-transform:uppercase;
+    width:75%;
+    background: #fff;
+    padding:5px 5px 5px 20px;
+    border: 1px solid #eee;
+    font-size: 12px;
+    margin: 20px 0 0 0;
+}
+
+.resumenbusqueda .exportar{
+    float:right;
+    font-size: 10px;
+}
+
+.resumenbusqueda .exportar img{
+    width: 20px;
+    height: 20px;
+}
+
+.tituloresultadosbusqueda{
+    float:left;
+    margin: 40px 0 0 60px;
+    font-size: 14px;
+    text-shadow: 1px 1px #eee;
+}
+.resultadosBusqueda{
+   z-index: 1;
+   position:relative;
+   float:left;
+   width:1010px;
+   padding: 5px;
+}
+
+.resultadosBusqueda .listadoSearch{
+    float:left;
+    width:324px;
+    height: 150px;
+    border: 0;
+    margin:5px;
+    background: #eef;
+    overflow-y: auto;
+}
+
+.resultadosBusqueda .listadoSearch .imagenListado{
+    float:left;
+    margin:10px 10px 5px 10px;
+    background-image:  url('../images/nohay.gif');
+    width: 49px;
+    height: 73px;
+}
+
+.resultadosBusqueda .listadoSearch .imagenListado img{
+    width: 49px;
+    height: 73px;
+}
+
+
+.resultadosBusqueda .listadoSearch .titulo {
+    font-size:11px;
+    color: #900;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.resultadosBusqueda .listadoSearch .autor {
+    font-size:11px;
+    color: #444;
+    font-weight: normal;
+    margin: 0;
+}
+
+.resultadosBusqueda .listadoSearch .isbn {
+    font-size:11px;
+    color: #444;
+    font-weight: normal;
+    margin: 0;
+}
+
+.resultadosBusqueda .listadoSearch .precio {
+    
+    margin: 5px;
+    float:right;
+    width: 100%;
+    
+}
+.resultadosBusqueda .listadoSearch .precio .valor{
+    font-size:11px;
+    color: #000;
+    font-weight: normal;
+    margin: 5px;
+    float:right;
+}
+.resultadosBusqueda .listadoSearch .precio img{    
+    margin: 5px;
+    float:right;
+    width: 20px;
+}

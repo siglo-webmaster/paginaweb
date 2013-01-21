@@ -1,0 +1,62 @@
+.userbar{
+    float:right;
+    margin:0 5px -2px 0;
+    background: #fff;
+    width:650px;
+    height: 18px;
+    padding: 3px;
+    border-color:#eee;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    box-shadow: 0 0 1px 0 #ccc;
+    
+}
+
+.userbar .etiqueta1{
+    float:left;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}
+.userbar .input1{
+    float:left;
+    font-size: 13px;
+    margin: 0 0 0 5px;
+
+}
+.userbar .input2 input{
+    float:left;
+    font-size: 9px;
+    margin: 0 30px 0 5px;
+    padding: 0px;
+    width:60px;
+    height:18px;
+
+}
+
+.userbar .link a{
+    color: #333;
+}
+
+.userbar .menuitem{
+    float:right;
+    padding: 8px 10px 0 10px;
+    margin: -3px 0 0 0;
+    height:14px;
+    background:#fff;
+    border-width: 0  0 0 1px;
+    border-color: #eee;
+    border-style:  dashed;
+}
+
+.userbar .usuariomenuitem{
+    font-size: 12px;
+    text-transform:  capitalize;
+    color: #333;
+    width: 160px;
+    height: 12px;
+    overflow:  hidden;
+    background: #fff;
+    margin: -3px 10px 0 0;
+    padding: 8px 0 0 5px;
+    float:right;
+}

@@ -1,0 +1,540 @@
+BODY {
+        background-color: #FFFFFF;
+        background-image: url('../images/tapiz_sdh.jpg');
+}
+
+.cuerpo {
+    width:1024px;
+    border-width:0;
+    cellspacing:0; 
+    cellpadding:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left
+}
+table {
+	background-color: #ffffff
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+/*a {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; margin-top: 1px; margin-bottom: 1px; text-decoration: underline}*/
+.enlacesub {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.enlacesubgris {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: underline;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.enlacerojo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #990000;
+	text-decoration: underline;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.bold10_gris {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.bold10_blanco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.bold11_blanco {
+	background-color:#CE141D;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.bold10_negro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.tituloDest {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.bold10_rojo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.textoblanco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.textonegro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.texto_promo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color:#900;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.texto_feria {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight:700;
+	color:#333;
+	text-decoration: none;
+	line-height:20px;
+}
+.texto_detalle {
+	color:#666;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 1.5em;
+}
+.precio {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.texto2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.autor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+.titulo_msn {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #990000;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-style : normal;
+}
+.titulo_cat {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #990000;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-style : normal;
+}
+.titulo_cat_1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style : normal;
+	padding:0 0 0 0;
+}
+.novedades {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #990000;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-style : normal;
+}
+.path {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-bottom: 1px
+}
+INPUT.fondo {
+	BORDER-RIGHT: #CCCCCC 1px groove;
+	BORDER-TOP: #CCCCCC 1px groove;
+	FONT-SIZE: xx-small;
+	BACKGROUND: #FFFFFF;
+	BORDER-LEFT: #CCCCCC 1px groove;
+	COLOR: black;
+	BORDER-BOTTOM: #CCCCCC 1px groove;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+        font-weight: bold;
+}
+.pulldown {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-weight: normal;
+color: #990000;
+text-decoration: none;
+}
+
+#contenedor_detalle{
+	width:460px;
+	height:560px;
+}
+#tipo_libro_detalle{
+	position:relative;
+	left:10px;
+}
+.tipo_libro_detalle{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	/*rgba(0,0,0,1);*/
+	font-weight:600;
+}
+#imagen_detalle{
+	position:relative;
+	width:122px;
+	height:189px;
+	text-align:center;
+	margin-top:15px;
+	margin-left:10px;
+	float:left;
+}
+#imagen_detalle img{
+	display:block;
+	margin:auto;
+	width:122px;
+	height:189px;
+}
+.texto_bajo_imagen{
+	text-decoration:none;
+	cursor:pointer;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#900;
+}
+#datos_detalle{
+	width:300px;
+	float:right;
+}
+.titulo_detalle{
+	position:relative;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	/*rgba(0,0,0,1);*/
+	font-weight:700;
+	text-align:justify;
+	top:20px;
+}
+.precio_detalle{
+	position:relative;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#990000;
+	font-weight:700;
+	text-align:justify;
+	top:20px;
+}
+.datos_detalle{
+	position:relative;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#333333;
+	text-align:justify;
+}
+#resumen_detalle{
+	position:relative;
+	clear:both;
+	top:10px;
+	width:440px;
+	height:200px;
+	display:none;
+}
+#descripcion_detalle{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	line-height:18px;
+	text-align:justify;
+	color:#333333;
+	padding:20px 10px;
+}
+#otros_datos_detalle{
+	position:relative;
+	clear:both;
+	top:15px;
+	width:140px;
+	cursor:pointer;
+}
+.popup{
+	background:url(../images/white_arrow_big.png) no-repeat;
+	position:absolute;
+	display:none;
+	width:300px;
+	height:175px;
+	margin-top:210px;
+	margin-left:-13px;
+}
+.datos_detalle_1{
+	position:relative;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#333333;
+	font-weight:600;
+	text-align:justify;
+	left:10px;
+	border:solid thin #FFF;
+}
+.otros_datos_detalle{
+	position:relative;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#333333;
+	text-align:justify;
+	top:30px;
+	left:30px;
+}
+#cantidad_compra_detalle{
+	position:absolute;
+	width:180px;
+	margin-left:260px;
+	border:solid thin #FFF;
+}
+#cantidad_compra_detalle p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	font-weight:700;
+}
+#cantidad_compra_detalle input{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	text-align:center;
+}
+#img_comprar{
+	position:relative;
+	top:-15px;
+	cursor:pointer;
+}
+.texto_ebook{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	text-align:justify;
+	color:#333333;
+}
+#img_que_es_ebook{
+	margin-left:130px;
+}
+.itemmyacount{
+    width:300px;
+    padding:10px;
+}
+
+.libro_detalle{
+    border-color:#bbb;
+    border-style:solid;
+    border-width:2px;
+    border-radius: 1em;  
+    -moz-border-radius:1em;  
+    -webkit-border-radius:1em;
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+  
+}
+
+
+.libro_detalle img {
+    max-width: 600px;
+    max-height: 600px; 
+}
+
+.libro_detalle table tr {
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+.editorial{
+    margin: -10px 0 0 10px;
+    width: 140px;
+}
+
+.editorial img{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 0 0 10px;
+}
+
+
+
+.formatos_precios table{
+    margin:5px;
+    font-size: 11px;
+    border-bottom-width: 1px;
+    border-color: #bbb;
+    border-style: solid;
+    float:left;
+}
+.formatos_precios2 table{
+    margin:5px 0 5px 20px;;
+    font-size: 11px;
+    border-bottom-width: 1px;
+    border-color: #bbb;
+    border-style: solid;
+    float:left;
+}
+
+.social{
+    border:#aaa;
+    background: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+    border-radius: 0.5em;
+    width:150px;
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+.formatos_precios table thead{
+    background-color: #ccc;
+}
+
+.zebra {
+        
+	background-color:#ccc;
+}
+
+.enlaceboton {    font-family: verdana, arial, sans-serif;
+    border-width: 1px;
+    font-size: 9pt;
+    font-family: arial;
+    display:inline;
+    text-decoration: none;
+    border-color: #666;
+    border-style: solid;
+    width:100px;
+    background-color: #ddd;
+    padding: 8px;
+    border-radius: 0.5em;
+    
+}
+
+#total{
+    float:right;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.totalapagar{
+    font-size: 20px !important;
+    background-color: #dddddd;
+}
+
+
+#mediospago .proveedor{
+    float:left;
+    margin: 10px;
+    padding:10px;
+    border: #CCCCCC solid thin ;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.stepcarousel{
+float:right;
+position: relative; /*leave this value alone*/
+border: 0;
+overflow: scroll; /*leave this value alone*/
+width: 140px; /*Width of Carousel Viewer itself*/
+height: 200px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 10px; /*margin around each panel*/
+width: 140px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+

@@ -1,0 +1,84 @@
+.menu{
+        background:#ccc;;
+        height:50px;
+        margin:50px auto 0;
+        padding:0 25px;
+        width:620px;
+}
+.menu li, .menu li a{
+        display:inline; /*aplica el haslayout para IE6 asi evitamos el doble margen a elementos flotados*/
+        float:left;     /*Importante para que todas nuestras listas, esten en una misma linea*/
+        width:auto;
+}
+.menu li{
+        margin:0 5px;
+        position:relative; /*Importante para el submenu pero por ahora no*/
+}
+.menu li a{
+        background: #ccc;
+        color:#000;
+        font:700 10px/4.5em Verdana;/*Siempre me han pedido un manual para abreviar el CSS, tranquilos ya viene... aqui, le di el font:weight, size, line-heigth, y font-family"*/
+        height:50px;
+        padding:0 15px;
+}
+.menu li a:hover{
+        background-position:0 50px; /*Usuamos una sola imagen y al pasar el cursor se baja el fondo 50px para hacer el efecto sin JS*/
+        color:#35608B;
+}
+
+
+.menu li:hover ul{
+        display:block; /*Indicamos que en hover del menu muestre el submenu*/
+}
+.menu ul {
+        background:#ddd;
+        display:none; /*indicamos que al cargar la web no muestre el submenu*/
+        left:0;
+        padding:5px 0 10px;
+        position:absolute;
+        top:50px;
+        width:200px;/*Le cambiamos el ancho sino hereda del ul anterior*/
+}
+.menu ul li, .menu ul li a{
+        margin:0;
+        padding:0;
+        width:200px;
+}
+.menu ul li a{
+        background:none;
+        border-bottom:1px solid #A3CADB;
+        color:#A3CADB;
+        height:25px;
+        line-height:2em;
+        margin:0 5px;
+        width:190px;
+}
+.menu ul li a:hover{
+        background:none;
+        color:#FFF;
+}
+/*FIX PARA MANTENER ACTIVO EL MENU CUANDO ESTAS ARRIBA DE EL*/
+.menu li:hover a{
+        background-position:0 50px; /*Usuamos una sola imagen y al pasar el cursor se baja el fondo 50px para hacer el efecto sin JS*/
+        color:#35608B;
+}
+.menu li:hover li a{
+        color:#A33A3B;
+}
+.menu li:hover li a:hover{
+        color:#FFF;
+}
+
+.menu  li ul li ul{
+        background:#ddd;
+        display:none; /*indicamos que al cargar la web no muestre el submenu*/
+        left:200;
+        padding:5 0 10px;
+        position:absolute;
+        top:-5px;
+        width:200px;/*Le cambiamos el ancho sino hereda del ul anterior*/
+}
+
+.menu li ul li:hover {
+        display:block; /*Indicamos que en hover del menu muestre el submenu*/
+}

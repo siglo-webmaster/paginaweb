@@ -1,0 +1,101 @@
+<?php
+class itemHTML{
+    public $items;
+    public $contador;
+    
+    function __construct(){
+        $this->items = '';
+        $this->contador=0;
+        $this->items.= "
+            <table border='0' width='500'>
+            <tr>";
+    }
+    
+    function addItem($data){
+        
+        $this->items.='<td> <table width="100%" cellspacing="0" cellpadding="4" border="0">
+                    <tbody><tr>
+                    <td width="27">&nbsp;</td>
+                    <td width="67" valign="top">
+            <!-- LINK DE DETALLES EN LA IMAGEN DEL ARTICULO -->
+                                    
+                        <a href="http://www.siglodelhombre.com?iframe=true&width=500&height=250" rel="prettyPhoto[iframes]">Apple.com</a>
+                            <img width="45" border="0" src="'.$data['link_imagen'].'">
+                         </a>
+            <!-- FIN LINK DE DETALLES EN LA IMAGEN DEL ARTICULO -->			
+                    </td>
+                    <td width="100%" class="texto">
+            <!-- LINK DE DETALLES EN EL TITULO DEL ARTICULO -->
+                    <a class="texto" href="'.$data['link_detalle'].'">"'.$data['titulo'].'"</a>
+            <!-- FIN LINK DE DETALLES EN EL TITULO DEL ARTICULO -->
+                    <br>
+            <!-- LINK DE DETALLES EN EL VINCULO VER DETALLES DEL ARTICULO -->
+                    <a href="'.$data['link_detalle'].'">Ver detalles...</a>
+            <!-- FIN LINK DE DETALLES EN EL VINCULO VER DETALLES DEL ARTICULO -->	  
+                    <br>
+            <!--DATOS DEL LIBRO -->	  				
+                                                    <br><strong>Autor(es):</strong> <br>'.$data['autores'].'<br>
+
+                                                    <strong>A&ntilde;o:</strong>'.$data['fecha_pub'].'<br>
+                                                   <b>Precio:</b>$ '.number_format($data['precio']).'<br>	
+                                                    
+                                                    <table width="128" cellspacing="0" cellpadding="0" border="0" class="texto">
+                                                            <tbody><tr>
+                                                            <td><strong>Formato:</strong>
+                                                            </td>
+                                                                    <td width="22">
+
+                                                                                            <img border="0" src="images/ebook.jpg">
+
+                                                                    </td>
+                                                                    <td width="6">
+                                                                    </td>
+                                                                    <td align="left" width="120">
+
+                                                                                            <span style="margin-top:10px;vertical-align:middle;" class="blod10_rojo">
+                                                                                                    '.$data['formato'].'
+                                                                                            </span>
+
+
+                                                                    </td>
+
+                                                            </tr>
+
+                                                    </tbody></table>					
+            <!--FIN DATOS DEL LIBRO -->											
+
+                                                    <div style="margin-top:10px;">
+                                                    </div>
+
+                            </td>
+                            </tr>
+                            <tr><td width="27">&nbsp;</td><td width="67">&nbsp;</td>
+                            <td width="129" valign="bottom">
+
+            <!-- BOTON AÑADIR AL CARRITO DE COMPRAS -->						       
+                    <input width="130" type="Image" height="18" border="0" alt="Agregar al carrito de compras" src="images/b_agregar.gif">
+            <!-- FIN BOTON AÑADIR AL CARRITO DE COMPRAS -->		  
+                    </td>
+
+                    </tr>
+            </tbody></table></td>';
+        $this->contador++;
+    }
+    function addBreak(){
+        $this->items.="</tr><tr>";
+    }
+    function closeItems(){
+        $this->items.='</tr></table>'.
+            "<script type=\"text/javascript\" charset=\"utf-8\">
+                    $(document).ready(function(){
+                            $(\"a[rel^='prettyPhoto']\").prettyPhoto({
+                                    animationSpeed: 'normal', /* fast/slow/normal */
+                                    opacity: 0.80, /* Value between 0 and 1 */
+                                    showTitle: false /* true/false */
+                            });
+                    });
+            </script>";
+    }
+
+}
+?>

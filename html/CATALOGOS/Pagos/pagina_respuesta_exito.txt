@@ -1,0 +1,31 @@
+Pagina Respuesta
+   <p><b>usuario_id : </b>11767</p>
+           <p><b>estado : </b>2</p>
+           <p><b>mensaje : </b>transaccion aprobada</p>
+           <p><b>ref_venta : </b>15-86</p>
+           <p><b>ref_pol : </b>1748086</p>
+           <p><b>descripcion : </b>Siglo del Hombre Editores [ Ref de pago: 15-86 Cliente: Oscar M. Borja ] </p>
+           <p><b>extra1 : </b></p>
+           <p><b>extra2 : </b></p>
+           <p><b>estado_pol : </b>4</p>
+           <p><b>firma : </b>35BDB422807B895E5E281E9B44BFA492</p>
+           <p><b>codigo_respuesta_pol : </b>1</p>
+           <p><b>riesgo : </b>.00</p>
+           <p><b>medio_pago : </b>12</p>
+           <p><b>tipo_medio_pago : </b>2</p>
+           <p><b>cuotas : </b>12</p>
+           <p><b>valor : </b>16000.00</p>
+           <p><b>valorPesos : </b>16000.00</p>
+           <p><b>iva : </b>.00</p>
+           <p><b>valorAdicional : </b>.00</p>
+           <p><b>moneda : </b>COP</p>
+           <p><b>idioma : </b>es</p>
+           <p><b>cus : </b>20120330</p>
+           <p><b>ciclo_pse : </b>null</p>
+           <p><b>emailComprador : </b>adsofmelk@gmail.com</p>
+           <p><b>banco_pse : </b></p>
+           <p><b>pse_referencia1 : </b></p>
+           <p><b>pse_referencia2 : </b></p>
+           <p><b>pse_referencia3 : </b></p>
+           <p><b>codigo_autorizacion : </b>823086</p>
+           <p><b>fecha_procesamiento : </b>2012-03-30</p>

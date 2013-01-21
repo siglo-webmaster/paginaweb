@@ -1,0 +1,165 @@
+
+root { 
+    display: block;
+}
+
+.barCar{
+    position: fixed;
+    z-index: 100;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    background-color: #60b000;
+    opacity: 1;
+    padding: 10px 0 0 0;
+    border-radius: 0.3em 0.3em 0 0 ;
+    -moz-border-radius: 0.3em 0.3em 0 0 ;
+    -webKit-border-radius: 0.3em 0.3em 0 0 ;
+    -ms-border-radius: 0.3em 0.3em 0 0 ;
+    height:  fit-content;
+}
+
+.barCar  .windowButton{
+    float: left;
+    margin: -3px 0 0 5px;
+    width: 15px;
+    height:15px;
+    background: #fff;
+    text-align:  center;
+    vertical-align: middle;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webKit-border-radius: 1em;
+    -ms-border-radius: 0.3em 0.3em 0 0 ;
+    font-weight:bold;
+}
+
+.barCar .titulobarcar{
+    color:#fff;
+    float:right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.barCar .carritoimg{
+    float:right;
+    margin:-5px 10px 0px auto;
+    opacity: 1;
+    background-color: #fff;
+    width: 25px;
+    text-align: center;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webKit-border-radius: 1em;
+    -ms-border-radius: 0.3em 0.3em 0 0 ;
+}
+.barCar .carritoimg img{
+    opacity: 1;
+    width:20px;
+}
+
+.barCar .resumenItems{
+    float:right;
+    font-size: 11px;
+    margin: 0 15px 0 0;
+}
+.barCar .resumenItems .titulo{
+    float:left;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.barCar .resumenItems .valor{
+    float:left;
+    font-weight: bold;
+    color:#fff;
+}
+.barCar .resumenValor{
+    float:right;
+    font-size: 11px;
+    margin: 0 15px 0 0;
+}
+.barCar .resumenValor .titulo{
+    float:left;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.barCar .resumenValor .valor{
+    float:left;
+    font-weight: bold;
+    color:#fff;
+}
+
+
+
+.barCar .barCardetalle{
+    display:none;
+    
+    width: 98%;
+    margin:20px 3px 2px 3px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+
+
+.barCar .barCardetalle .barCaritem{
+    width:100%;
+    height: 60px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #60b000;
+    border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -webKit-border-radius: 0.3em;
+    -ms-border-radius: 0.3em 0.3em 0 0 ;
+    background-color: #fff;
+    overflow-y:  hidden;
+}
+
+
+.barCar .barCardetalle .barCaritem .barCaritemimagen{
+    float: left;
+    margin: 3px;
+    
+}
+
+.barCar .barCardetalle .barCaritem .barCaritemimagen img{
+    width:30px;
+    height: 40px;
+    
+}
+
+.barCar .barCardetalle .barCaritem .barCaritemdetalles{
+    float:left;
+    margin: 5px;
+    max-height: 48px;
+    width: 200px;
+}
+
+.barCar .barCardetalle .barCaritem .barCaritemdetalles .barCaritemtitulo{
+    
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.barCar .barCardetalle .barCaritem .barCaritemdetalles .barCaritemcantidad{
+    
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.barCar .barCardetalle .barCaritem .barCaritemdetalles .barCaritemvalor{
+    
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.barCar .verMas{
+    float:right;
+    margin:5px 30px 5px 5px;
+    font-weight: bold;
+    font-size: 11px;
+    color:#fff;
+    display:none;
+}

@@ -1,0 +1,194 @@
+h1. Infinite Ajax Scroll
+
+Turn your paginated pages into infinite scrolling pages with ease.
+
+Version 0.1.5
+
+Requires jQuery 1.4 or newer. 
+
+Licensed under:
+MIT License - http://www.opensource.org/licenses/mit-license.php
+
+h2. Requirements
+
+* jQuery 1.4+
+* A fully working (server-side) pagination with a 'goto the next page' link
+
+IAS is based on the assumption that you, as a developer, already have taken care for the pagination using a server-side script. What IAS does is loading the next page via AJAX and inserting each individual item into the current page.
+
+h2. Installation
+
+To install Infinite Ajax Scroll make sure you have jQuery 1.4+ installed. Next, add jquery.ias.min.js to the head of your webpage.
+
+bc. <script type="text/javascript" src="jquery.ias.min.js"></script>
+
+Now place the loader image in you image folder and add the CSS to you existing stylesheets.
+
+h2. Basic usage
+
+bc. jQuery.ias({
+	container : '.listing',
+	item: '.post',
+	pagination: '#content .navigation',
+	next: '.next-posts a',
+	loader: '<img src="images/loader.gif"/>'
+});
+
+You can use IAS multiple times within a single webpage. For example, you can have an IAS definition for paginating blogposts and one for comments.
+
+h2. Options
+
+h3. container
+
+*Default:* "#container"
+Enter the selector of the element containing your items that you want to paginate.
+
+h3. item
+
+*Default:* ".item"
+Enter the selector of the element that each item has. Make sure the elements are inside the container element.
+
+h3. pagination
+
+*Default:* "#pagination"
+Enter the selector of the element that contains your regular pagination links, like next, previous and the page numbers. This element will be hidden when IAS loads.
+
+h3. next
+
+*Default:* ".next"
+Enter the selector of the link element that links to the next page. The href attribute of this element will be used to get the items from the next page. Make sure there is only one(1) element that matches the selector.
+
+h3. loader
+
+*Default:* '`<img src="images/loader.gif"/>`'
+Enter the url to the loader image. This image will be displayed when the next page with items is loaded via AJAX.
+
+h3. tresholdMargin
+
+*Default:* 0
+On default IAS starts loading new items when you scroll to the latest .item element. The tresholdMargin will be added to the items' offset, giving you the ability to load new items earlier (please note that the margin should be a negative integer for this case).
+
+For example:
+
+Setting a tresholdMargin of -250 means that IAS will start loading 250 pixel _before_ the last item has scrolled into view. A positive margin means that IAS will laod new items N pixels after the last item. 
+
+h3. history
+
+*Default:* true
+Set this to false to disable the history module. 
+
+The IAS history module uses hashes (in the format "#/page/<num>") to remember the last viewed page, so when a visitor hits the back button after visiting an item from that page, it will load all items up to that last page and scrolls it into view. The use of hashes can be problematic in some cases, in which case you can disable this feature.
+
+h3. onPageChange
+
+*Default:* empty function
+Event handler. Is called each time the user scrolls to an other page.
+
+Parameters:
+
+|*param*|*description*|
+|pageNum|Current page number|
+|pageUrl|Url of the current page|
+|scrollOffset|scroll offset for this page|
+
+Example:
+
+bc. onPageChange: function(pageNum, pageUrl, scrollOffset) { console.log('Welcome on page ' + pageNum); } 
+
+h3. onLoadItems
+
+*Default:* empty function
+Event handler. Is called each time new items are loaded.
+
+Parameters:
+
+|*param*|*description*|
+|items|array containing the item elements|
+
+Return value:
+When we return false in the callback, we prevent IAS from automatically insert the loaded items. This can be used to manually insert the items.
+
+Example:
+
+bc. onLoadItems: function(items) { console.log('We loaded ' + items.length + ' items'); } 
+
+h3. onRenderComplete
+
+*Default:* empty function
+Event handler. Is called each time new items have been inserted in the DOM.
+
+This can be useful when you have a javascript function that normally performs some actions on the items in the document.ready event. When loading items from a new page using IAS, the document ready handler isn't called. Use this event instead.
+
+Parameters:
+
+|*param*|*description*|
+|items|array containing the item elements|
+
+Example:
+
+bc. onRenderComplete: function(items) { console.log('We rendered ' + items.length + ' items'); } 
+
+h2. Advanced usage
+
+h3. Integrating Google Analytics
+
+You can integrate Google Analytics by using the onPageChange event. Here is an example:
+
+bc. jQuery.ias({
+    container : '.listing',
+    item: '.post',
+    pagination: '#content .navigation',
+    next: '.next-posts a',
+    loader: '<img src="images/loader.gif"/>',
+    onPageChange: function(pageNum, pageUrl, scrollOffset) {
+        // This will track a pageview every time the user 
+        // scrolls up or down the screen to a different page.
+        path = jQuery('<a/>').attr('href',pageUrl)[0].pathname.replace(/^[^\/]/,'/');
+        _gaq.push(['_trackPageview', path]);
+    }
+});
+
+h3. Integrating with jQuery Masonry
+
+Example on how to integrate "jQuery Masonry":http://masonry.desandro.com/.
+
+bc. jQuery.ias({
+    container : '.listing',
+    item: '.post',
+    pagination: '#content .navigation',
+    next: '.next-posts a',
+    loader: '<img src="images/loader.gif"/>',
+    onLoadItems: function(items) {
+        // hide new items while they are loading
+        var $newElems = $(items).show().css({ opacity: 0 });
+        // ensure that images load before adding to masonry layout
+        $newElems.imagesLoaded(function(){
+          // show elems now they're ready
+          $newElems.animate({ opacity: 1 });
+          $('.listing').masonry( 'appended', $newElems, true ); 
+        });
+        return true;
+    }
+});
+
+
+h2. Customizing
+
+IAS inserts a div element with an image to generate a loader. The div has a class called *ias_loader*. Using this class you can adjust the styling of the loader.
+
+You can also link to an other loader image. Use the *loader* option to link to the right image.
+
+h2. Issues
+
+If you have any ideas or bugs, please submit them to the GitHub issue tracker at https://github.com/webcreate/Infinite-Ajax-Scroll. We rely on our users for ideas on improvements and bug reports.
+
+h2. Contributers
+
+These people have contributed to IAS. A dollar sign indicates a paided feature request or donation. Between brakets is the part of IAS they have contributed to.
+
+* Varun Mishra (IE8 bugfix)
+* Farooq A.Aziz $
+* Sascha Oosterbaan $ (onLoadItems)
+* Loïc Heroguer $ (tresholdMargin)
+* Andy Smith (onRenderComplete, html loader)
+

@@ -1,0 +1,293 @@
+.tituloModulo{
+    float:left;
+    clear: both;
+    width:100%;
+    margin:5px;
+    padding:0;
+    color: #981900;
+    font-size: 20px;
+    font-weight:  bold;
+}
+.menuUser{
+    float:left;
+    clear: both;
+}
+
+.menuUser ul{
+    list-style-type:  none;
+}
+
+.menuUser ul li {
+    float:left;
+    margin: 0;
+    padding: 1px 10px 1px 10px;
+    border-width: 1px;
+    border-color:  maroon;
+    border-style: solid;
+    font-size: 11px;
+}
+.menuUser ul li a:hover {
+    background-color:#bbb;
+}
+
+.mensaje {
+    position:relative;
+    float:left;
+    clear:  both;
+    width:100%;
+    height: 20px;
+    background:  #ccc;
+    font-size: 12px;
+    color: #333;
+    padding:5px;
+    margin: 0 0 10px 0;
+}
+
+.menuModule{
+    float:left;
+    width: 100%;
+    clear: both;
+}
+
+.menuModule ul{
+    list-style-type:  none;
+}
+.menuModule ul li {
+    float:left;
+    margin: 0;
+    padding: 1px 10px 1px 10px;
+    border-width: 1px;
+    border-color:  maroon;
+    border-style: solid;
+    font-size: 11px;
+}
+.menuModule ul li:hover {
+    background-color:#ccc;
+}
+
+.listado{
+    float:left;
+    margin: 10px;
+}
+.listado table{
+    border-color: #bbb;
+    border-width: 1px;
+    border-style:solid;
+}
+
+.listado table thead{
+    background-color: #981900;
+    color:#fff;
+    font-size: 14px;
+}
+
+.formulario{
+    float:left;
+    clear: both;
+    margin: 10px;
+}
+
+.formulario img{
+    width: 150px;
+}
+
+.panelIzquierdo{
+    float:left;
+    margin: 0 0 0 50px;
+    border-width:1px;
+    border-color: #981900;
+    border-style: solid;
+}
+
+.panelDerecho{
+    float:left;
+    margin: 0 0 0 30px;
+    border-width:1px;
+    border-color: #981900;
+    border-style: solid;
+}
+
+.selector{
+    background:  #bbb;
+    color: #000;
+    padding:2px;
+    margin:10px;
+    border-width:1px;
+    border-color:#ccc;
+    border-style: solid;
+    width:80px;
+    height:16px;
+    float:left;
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+}
+
+.panelSeleccionados{
+    float:left;
+    margin: 30px;
+    clear: both;
+    width: 90%;
+    border-width:1px;
+    border-color: #981900;
+    border-style: solid;
+    
+}
+
+.panelSeleccionados .tituloSeleccionado {
+    width:100%;
+    height:100px;
+}
+.panelSeleccionados .tituloSeleccionado img{
+  float:left;
+    width:12px;
+    height:12px;
+    margin: 2px 10px 0 10px;
+}
+.panelSeleccionados .tituloSeleccionado .caratula img{
+    float:left;
+    width:50px;
+    height:70px;
+}
+.botonGuardar{
+    float:left;
+    clear: both;
+}
+
+.preview{
+    float:left;
+    width:160px;
+    height: 340px;
+    background: #eee;
+    margin:5px;
+    padding:5px;
+    text-align: center;
+}
+
+.preview .titulo_text{
+    font-size:11px;
+    height: 90px;
+}
+.preview img{
+    width:130px;
+    max-height: 190px;
+    margin: 10px 0 0 0;
+    
+}
+
+.preview .opcion{
+    float:left;
+    margin: 5px 0 0 0;
+}
+
+.overlay{
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     z-index:9998;
+     opacity:.75;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+}
+
+.popUp{
+   display:none;
+   z-index:9999; 
+   position:fixed; 
+   left:30%;
+   top: 5%;
+   left: 25%;
+   width: 650px;
+   height: 500px;
+   border: 1px solid #33CCFF; 
+   text-align:center; 
+   background:#FFFFFF;
+   border:solid 1px #aaa; 
+   border-radius: 0.3em;
+   overflow: auto;
+   padding: 15px;
+}
+
+.precio{
+    display:none;
+}
+
+.contenedorimagen img{
+    width:300px;
+    float:left;
+    margin:10px 15px 15px 15px;
+    
+}
+
+.titulo{
+    width:300px;
+    float:left;
+    margin:20px 0 10px 0;
+    color: #981900;
+    font-weight: bold;
+    clear: right;
+}
+.isbn{
+    width:300px;
+    float:left;
+}
+
+.autores{
+    width:300px;
+    float:left;
+}
+
+.editoriales {
+    width:300px;
+    float:left;
+}
+
+.anyo{
+    width:300px;
+    float:left;
+    margin: 0 0 10px 0;
+}
+
+.libro_detalle_search p{
+    float:left;
+    width: 300px;
+}
+
+.estadoitem{
+    float:left;
+    margin: 2px 0 0 0;
+    font-size:11px;
+}
+
+.check{
+    float:left;
+    margin: 5px 5px 0 20px;
+}
+
+.activo{
+   color: #206000;
+}
+
+.inactivo{
+  color: #981900; 
+}
+
+.editoriales {
+    float:left;
+    width: 150px;
+    font-size:11px;
+}
+
+.informacion{
+    margin: 5px  0 0 200px;
+}
+
+.popUp p {
+    font-size: 12px;
+    float:left;
+    text-align:  justify;
+}

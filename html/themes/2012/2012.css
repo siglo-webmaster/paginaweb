@@ -1,0 +1,254 @@
+root { 
+    display: block;
+}
+
+body{
+    background: #fff;
+    margin: 0; 
+    padding: 0; 
+    padding-top: 10px;
+    text-align: center;
+}
+
+#centered
+{ 
+    width: 1024px;
+    text-align: left;
+    border-width: 1px;
+    border-color: #bdbcbc;
+    border-style:solid;
+    padding: 0;  
+    margin: 0 auto; 
+    height:  250px;
+} 
+
+#slogan{
+    float:left;
+    position: relative;
+    margin: 20px 0 0 20px;
+}
+
+#slogan #slogan_izquierda{
+    float:left;
+    width: 87px;
+    padding: 0 12px 0 0;
+    height: 85px;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    border-color: #a8d81b;
+    color: #656263;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+#slogan #slogan_izquierda ul {
+    text-decoration: none;
+    list-style-type:  none;
+    margin:0;
+    padding: 0;
+}
+
+#slogan #slogan_derecha{
+    float:left;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #231f20;
+    width:90px;
+    margin: 48px 0 0 10px;
+}
+#logoweb{
+    float:left;
+    margin: 34px 0 0 74px;
+}
+#informacion {
+    float:left;
+    width: 310px;
+    text-align: right;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+#informacion .linea1{
+    float:left;
+    margin: 14px 0 0 254px;
+    width:100px;
+}
+#informacion .linea1 img{
+    float:left;
+    
+}
+
+#informacion .linea2{
+    float:left;
+    width: 300px;
+    margin: -4px 0 0 0;
+   
+}
+#informacion .linea2 img{
+    margin: 0 5px 0 0;
+   
+}
+#informacion .linea3{
+    float:left;
+    width: 300px;
+    color:  #999;
+}
+
+#informacion .linea3 a{
+    color: #999;
+    
+}
+
+#informacion .linea4{
+    float:left;
+    width: 300px;
+    color:   #f40f0f;
+    margin: 4px 0 0 0;
+}
+
+
+#informacion .linea3 .bold_text {
+    font-weight: bold;
+    color: #333;
+}
+
+
+#buscador {
+    width: 100%;
+    float:left;
+    margin: 14px 0 0 18px;
+}
+#buscador .buscador_izquierda{
+    float:left;
+    width:10px;
+}
+
+#buscador .buscador_centro{
+    float:left;
+    width: 929px;
+    height: 27px;
+    padding: 0;
+    border-width:1px 0 2px 0;
+    border-style: solid;
+    border-color: #CE141D;
+    margin: 0;
+    font-size: 22px;
+}
+
+#buscador .buscador_centro input text{
+    
+}
+
+#buscador .buscador_derecha{
+    float:left;
+    width:54px;
+}
+
+#menu{
+    float: left;
+    width: 822px;
+    height:19px;
+    background-color: #fff;
+    margin: 19px 0 0 20px;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+#menu .menu_capa1, #menu .menu_capa2{
+    float:left;
+    clear:left;
+}
+
+#menu .menu_capa2{
+    /*display:none;*/
+}
+
+#menu ul{
+    display: inline;
+    list-style:  none;
+    
+}
+#menu ul li{
+    float:left; 
+    display: block;
+}
+#menu .vinculo1{
+    background-color: #ccc;
+    padding: 3px 11px 2px 12px;
+    color: #CE141D;
+}
+#menu .vinculo1_bold{
+    background-color: #ccc;
+    padding: 3px 11px 1px 12px;
+    color: #CE141D;
+    font-weight: bold;
+}
+#menu .separador1{
+    background: #fff;
+    width: 5px;
+    height: 5px;
+}
+
+#menu .vinculo2{
+    background-color: #fff;
+    padding: 3px 11px 2px 12px;
+    color: #fff;
+}
+
+#menu .vinculo2_bold{
+    background-color: #fff;
+    padding: 3px 11px 1px 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#carrito {
+    float:left;
+    width: 167px;
+    background: #fff;
+    height: 60px;
+    margin: 10px 0 0 10px;
+}
+
+#carrito .carrito_izquierda{
+    float:left;
+    width: 22px;
+}
+
+#carrito .carrito_izquierda img{
+    padding: 15px 0 0 20px;
+}
+#carrito .carrito_derecha{
+    float:right;
+    height:50px;
+    width: 102px;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    text-align: left;
+    color : #666;
+}
+.select_monedas{
+    font-size: 9px;
+    width: 90px;
+    height: 16px;
+    padding: 0;
+}
+
+#acumulado_carrito{
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 3px 0 0 0;
+    color: #666;
+}
+
+#boton_comprar_carrito{
+    padding: 0;
+    margin: -2px 0 0 0;
+}

@@ -1,0 +1,108 @@
+Inicio programa de registro
+[ 052212 ] procesando exis_web.txt
+Inicio programa de registro
+[ 052212 ] procesando exis_web.txt
+Inicio programa de registro
+[ 052212 ] procesando exis_web.txt
+Inicio programa de registro
+[ 20120522_may%i1337715722 ] procesando 052212exis_web.txt
+Inicio programa de registro
+[ 20120522_02:43:06 PM_ ] procesando 20120522_may%i1337715722052212exis_web.txt
+Inicio programa de registro
+[ 20120522_02:43:30 PM_ ] procesando carga.txt
+Inicio programa de registro
+[ 20120522_14:44:28_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_14:45:06_ ] procesando 20120522_14:44:28_carga.txt
+Inicio programa de registro
+[ 2012-05-22_14:46:46_ ] procesando carga.txt
+Inicio programa de registro
+Inicio programa de registro
+[ 2012-05-22_15:25:12_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:27:37_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:28:44_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:29:01_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:30:32_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:31:22_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:32:22_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:33:39_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:34:34_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:36:54_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:36:55_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:37:12_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:37:42_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:38:02_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:38:45_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:43:19_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:43:37_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:44:24_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:45:06_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:45:08_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:45:41_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:46:46_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:46:51_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:49:05_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:49:29_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:49:40_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:50:39_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:51:37_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:51:43_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:52:45_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:55:02_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:55:23_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:56:21_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_15:57:14_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_16:08:20_ ] procesando carga.txt
+Inicio programa de registro
+[ 2012-05-22_16:15:39_ ] procesando stock.txt
+Inicio programa de registro
+[ 2012-05-22_16:25:20_ ] procesando stock.txt
+Inicio programa de registro
+[ 2012-05-22_16:45:25_ ] procesando stock1.txt
+Inicio programa de registro
+[ 2012-05-22_16:56:08_ ] procesando 2012-05-22_16:08:20_carga.txt
+Inicio programa de registro
+[ 2012-05-22_16:57:51_ ] procesando 2012-05-22_16:08:20_carga.txt
+Inicio programa de registro
+[ 2012-05-22_17:02:34_ ] procesando 2012-05-22_16:15:39_stock.txt
+Inicio programa de registro
+[ 2012-05-22_17:04:54_ ] procesando 2012-05-22_16:25:20_stock.txt
+[ 2012-05-22_17:04:54_ ] procesando 2012-05-22_16:45:25_stock1.txt
+[ 2012-05-22_17:04:59_ ] procesando 2012-05-22_16:57:51_2012-05-22_16:08:20_carga.txt
+Inicio programa de registro
+[ 2012-05-22_17:05:52_ ] procesando 2012-05-22_16:57:51_2012-05-22_16:08:20_carga.txt
+[ 2012-05-22_17:10:47_ ] procesando 2012-05-22_17:02:34_2012-05-22_16:15:39_stock.txt

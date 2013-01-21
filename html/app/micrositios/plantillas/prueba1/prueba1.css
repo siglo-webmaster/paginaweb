@@ -1,0 +1,21 @@
+/* 
+    Document   : prueba1
+    Created on : 09-ago-2012, 16:39:17
+    Author     : adso
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.micrositio {
+    width:1024px;
+    left:50%;
+    top:10px;
+    height: 600px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+}

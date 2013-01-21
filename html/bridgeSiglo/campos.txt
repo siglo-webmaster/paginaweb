@@ -1,0 +1,2 @@
+ Linea1: transportadora,pais, ciudad, id_ordenes,valor,moneda,fletes,impuestos,descuentos, id_ordenes_plataforma_pago, plataforma_pago, fin_proceso, id_ordenes_transportadoras, direccion_entrega, nombre_destinatario, telefono_destinatario, email_destinatario, observaciones , estado
+ Lineas 2..n : id_tipos_productos (1=fisico,2=ebook,3=pdo) ,id_proveedores(1=siglodelhombre,2=tirant,3=publidisa), codigo_producto,nombre_producto,cantidad 

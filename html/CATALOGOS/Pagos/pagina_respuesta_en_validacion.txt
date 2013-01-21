@@ -1,0 +1,12 @@
+Pagina Respuesta
+   <p><b>usuario_id : </b>11767</p>
+           <p><b>estado : </b>9</p>
+           <p><b>mensaje : </b>transaccion en validación</p>
+           <p><b>ref_venta : </b>15-88</p>
+           <p><b>ref_pol : </b>1748128</p>
+           <p><b>descripcion : </b>Siglo del Hombre Editores [ Ref de pago: 15-88 Cliente: Oscar M. Borja ] </p>
+           <p><b>extra1 : </b></p>
+           <p><b>extra2 : </b></p>
+           <p><b>estado_pol : </b>7</p>
+           <p><b>firma : </b>11966345CE5EB86646EADFE51B447887</p>
+
